@@ -1,0 +1,19 @@
+services:  
+  api:    
+    build: ./hackaton_server    
+    container_name: hackaton_server    
+    ports:      
+      - '5000:5000'    
+    volumes:     
+      - ./hackaton_server:/app      
+      - /app/node_modules
+  client:
+    build: ./hackaton
+    container_name: client_frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./hackaton:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true

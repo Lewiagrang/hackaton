@@ -1,0 +1,19 @@
+{
+  "name": "hackaton_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bwip-js": "^4.5.1",
+    "canvas": "^2.11.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}
